@@ -2,5 +2,5 @@ import React from 'react';
 import { Heading } from '@chakra-ui/react';
 
 export const EventPage = () => {
-  return <Heading>Event</Heading>;
+  return <Heading>Event, dit is de klikbare link naar Event.</Heading>;
 };
