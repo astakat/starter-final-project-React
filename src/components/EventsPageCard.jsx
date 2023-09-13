@@ -4,15 +4,16 @@ import { Image } from '@chakra-ui/react'
 import { Heading } from '@chakra-ui/react'
 import { Flex } from '@chakra-ui/react'
 import { Tag } from '@chakra-ui/react'
+import { Link } from "react-router-dom"
 
 
-
-export const EventsPageCard = ({ event, categories, users }) => {
+export const EventsPageCard = ({ event, categories, clickFn }) => {
     return (
         <Card
             direction={{ base: 'column', sm: 'row' }}
             overflow='hidden'
             variant='outline'
+            onClick={() => clickFn(event)}
         >
             <Image
                 objectFit='cover'
