@@ -4,20 +4,20 @@ import { Image } from '@chakra-ui/react'
 import { Heading } from '@chakra-ui/react'
 import { Flex } from '@chakra-ui/react'
 import { Tag } from '@chakra-ui/react'
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 
 
-export const EventsPageCard = ({ event, categories, clickFn }) => {
+export const EventsPageCard = ({ event, categories }) => {
     return (
         <Card
             direction={{ base: 'column', sm: 'row' }}
             overflow='hidden'
             variant='outline'
-            onClick={() => clickFn(event)}
+        // onClick={() => clickFn(event)}
         >
             <Image
                 objectFit='cover'
-                maxW={{ base: '100%', sm: '200px' }}
+                maxW={{ base: '100%', sm: '100px' }}
                 src={event.image}
                 alt={event.title}
             />
